@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Dinesh Pranav K S | Software Engineer & Full-Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Dinesh Pranav K S, a passionate Software Engineer and Full-Stack Developer specializing in building high-performance web applications, scalable backend APIs, and premium user experiences.">
+  <meta name="keywords" content="Dinesh Pranav K S, Full-Stack Developer, Software Engineer, Web Developer Portfolio, React Developer, Node.js, Cloud Architect">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dinesh Pranav K S | Software Engineer Portfolio">
+  <meta property="og:description" content="Explore the portfolio of Dinesh Pranav K S, featuring modern full-stack web applications, custom API architectures, and stunning design aesthetics.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind-like Base and Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom Portfolio Logic Script -->
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Background Decorative Blurry Blobs -->
+  <div class="blob-bg-container" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header id="main-header" class="header">
+    <div class="header-container container">
+      <a href="#home" class="logo" id="header-logo">
+        <span class="logo-accent">&lt;</span>Dinesh<span class="logo-accent"> /&gt;</span>
+      </a>
+      
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Theme and Menu CTA Actions -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light/dark theme">
+          <i data-lucide="moon" class="icon-moon"></i>
+          <i data-lucide="sun" class="icon-sun"></i>
+        </button>
+        
+        <button id="mobile-menu-btn" class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <i data-lucide="menu" class="icon-menu"></i>
+          <i data-lucide="x" class="icon-close"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-drawer" aria-hidden="true">
+    <nav class="mobile-drawer-nav" aria-label="Mobile Navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="section hero-section">
+      <div class="container hero-container grid-2">
+        <div class="hero-content">
+          <div class="badge-container">
+            <span class="pulse-indicator"></span>
+            <span class="badge-text">Available for Freelance & Full-time Roles</span>
+          </div>
+          <h1 class="hero-title">
+            Crafting Digital Solutions That <span class="gradient-text">Inspire & Scale</span>
+          </h1>
+          <p class="hero-subtitle">
+            Hi, I'm <strong class="highlight-name">Dinesh Pranav K S</strong>. I specialize in building 
+            <span class="typewriter-text" id="typewriter" data-words='["scalable backends", "dynamic web applications", "elegant interfaces", "cloud solutions"]'></span>
+            <span class="cursor-caret">|</span>
+          </p>
+          <p class="hero-description">
+            Passionate software engineer focused on developing modular architectures, optimizing full-stack application performance, and designing intuitive user interactions.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
+              <span>Explore My Work</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="hero-cta-contact">
+              <span>Let's Connect</span>
+              <i data-lucide="mail"></i>
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years Coding</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-number">99%</span>
+              <span class="stat-label">Client Satisfaction</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="image-wrapper">
+            <div class="blob-mesh"></div>
+            <!-- Portrait Image Placeholder, to be replaced by actual image generation or SVG representation -->
+            <img src="assets/profile.png" alt="Dinesh Pranav K S Profile Portrait" class="profile-img" id="profile-portrait-img">
+            <div class="glass-overlay-card info-card-1">
+              <div class="card-icon"><i data-lucide="code-2"></i></div>
+              <div>
+                <h4>Tech Stack</h4>
+                <p>MERN, Django, Cloud</p>
+              </div>
+            </div>
+            <div class="glass-overlay-card info-card-2">
+              <div class="card-icon"><i data-lucide="sparkles"></i></div>
+              <div>
+                <h4>Focus</h4>
+                <p>Clean Code & Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title"><span class="gradient-text">About Me</span></h2>
+          <p class="section-subtitle">A brief overview of who I am, my philosophy, and what drives my work.</p>
+        </div>
+        <div class="about-grid grid-2">
+          <div class="about-bio">
+            <h3>Bridging the gap between design & technical engineering</h3>
+            <p>
+              My journey into programming began out of curiosity about how software interacts with web architectures. Over the years, that curiosity evolved into a professional career focused on building robust backends and frontend experiences.
+            </p>
+            <p>
+              I believe in writing semantic, highly performance-driven code. I approach development with a system-thinking mindset, making scalability, accessibility, and modern aesthetics core parts of every codebase I touch.
+            </p>
+            <p>
+              When I'm not writing code or deploying services, you'll find me reviewing system architecture patterns, experimenting with UI/UX layout trends, or contributing to open-source contributions.
+            </p>
+            <div class="bio-details">
+              <div class="detail-item">
+                <strong>Location:</strong>
+                <span>Chennai, India</span>
+              </div>
+              <div class="detail-item">
+                <strong>Education:</strong>
+                <span>B.Tech Computer Science & Eng.</span>
+              </div>
+              <div class="detail-item">
+                <strong>Interests:</strong>
+                <span>Open-Source, DevOps, Graphic Design</span>
+              </div>
+            </div>
+            <div class="about-actions">
+              <a href="assets/resume.pdf" class="btn btn-primary" id="download-resume-btn" download>
+                <span>Download Resume</span>
+                <i data-lucide="download"></i>
+              </a>
+            </div>
+          </div>
+          <div class="about-philosophy">
+            <div class="philosophy-card">
+              <div class="phil-num">01</div>
+              <div class="phil-content">
+                <h4>Performance First</h4>
+                <p>Optimizing assets, caching layers, and database queries is not an afterthought; it is integrated from the first line of code.</p>
+              </div>
+            </div>
+            <div class="philosophy-card">
+              <div class="phil-num">02</div>
+              <div class="phil-content">
+                <h4>User-Centric Interfaces</h4>
+                <p>A website should be intuitive, accessible, and delightful to navigate. Smooth animations and clean layouts are essential.</p>
+              </div>
+            </div>
+            <div class="philosophy-card">
+              <div class="phil-num">03</div>
+              <div class="phil-content">
+                <h4>Scale & Maintainability</h4>
+                <p>I structure projects using modular frameworks and clean architectures that are ready to scale as operations grow.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title"><span class="gradient-text">Skills & Technologies</span></h2>
+          <p class="section-subtitle">The tools, libraries, and languages I use to bring interfaces and backends to life.</p>
+        </div>
+        
+        <div class="skills-grid">
+          <!-- Frontend Development Card -->
+          <div class="skills-card glass-panel animate-on-scroll">
+            <div class="skills-card-header">
+              <div class="skill-icon"><i data-lucide="monitor"></i></div>
+              <h3>Frontend Architecture</h3>
+            </div>
+            <ul class="skills-list">
+              <li>
+                <div class="skill-info">
+                  <span>HTML5 / CSS3 / ES6+ JavaScript</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 95%"></span></div>
+              </li>
+              <li>
+                <div class="skill-info">
+                  <span>React.js / Next.js / Vue.js</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 90%"></span></div>
+              </li>
+              <li>
+                <div class="skill-info">
+                  <span>Responsive Design & Flexbox/Grid</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 95%"></span></div>
+              </li>
+              <li>
+                <div class="skill-info">
+                  <span>TailwindCSS / Styled Components</span>
+                  <span>88%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 88%"></span></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Backend Development Card -->
+          <div class="skills-card glass-panel animate-on-scroll">
+            <div class="skills-card-header">
+              <div class="skill-icon"><i data-lucide="server"></i></div>
+              <h3>Backend & Database</h3>
+            </div>
+            <ul class="skills-list">
+              <li>
+                <div class="skill-info">
+                  <span>Node.js / Express.js</span>
+                  <span>92%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 92%"></span></div>
+              </li>
+              <li>
+                <div class="skill-info">
+                  <span>Python / Django / Flask</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 85%"></span></div>
+              </li>
+              <li>
+                <div class="skill-info">
+                  <span>REST APIs & GraphQL Design</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 90%"></span></div>
+              </li>
+              <li>
+                <div class="skill-info">
+                  <span>PostgreSQL / MongoDB / Redis</span>
+                  <span>88%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 88%"></span></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- DevOps & Infrastructure Card -->
+          <div class="skills-card glass-panel animate-on-scroll">
+            <div class="skills-card-header">
+              <div class="skill-icon"><i data-lucide="cloud"></i></div>
+              <h3>DevOps & Systems</h3>
+            </div>
+            <ul class="skills-list">
+              <li>
+                <div class="skill-info">
+                  <span>Docker & Containerization</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 85%"></span></div>
+              </li>
+              <li>
+                <div class="skill-info">
+                  <span>Git / GitHub Actions CI-CD</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 90%"></span></div>
+              </li>
+              <li>
+                <div class="skill-info">
+                  <span>AWS / Vercel / Heroku</span>
+                  <span>80%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 80%"></span></div>
+              </li>
+              <li>
+                <div class="skill-info">
+                  <span>Linux Administration & Shell Scripting</span>
+                  <span>82%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 82%"></span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Education Timeline Section -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title"><span class="gradient-text">My Journey</span></h2>
+          <p class="section-subtitle">Education, milestones, and professional checkpoints along the way.</p>
+        </div>
+        
+        <div class="timeline">
+          <!-- Timeline Card 1 -->
+          <div class="timeline-item left animate-on-scroll">
+            <div class="timeline-icon"><i data-lucide="briefcase"></i></div>
+            <div class="timeline-content glass-panel">
+              <span class="timeline-date">2024 - Present</span>
+              <h3>Software Engineer</h3>
+              <h4 class="company-name">Thiranex Solutions</h4>
+              <p>Lead the architectural overhaul of full-stack client projects. Built and integrated secure payment gateways, configured automated deployment pipelines using Docker, and cut server response times by 30% via Redis database query optimizations.</p>
+            </div>
+          </div>
+          
+          <!-- Timeline Card 2 -->
+          <div class="timeline-item right animate-on-scroll">
+            <div class="timeline-icon"><i data-lucide="briefcase"></i></div>
+            <div class="timeline-content glass-panel">
+              <span class="timeline-date">2023 - 2024</span>
+              <h3>Full-Stack Developer Intern</h3>
+              <h4 class="company-name">Innovate Tech Labs</h4>
+              <p>Collaborated closely with designers to convert interactive Figma mockups into pixel-perfect React components. Designed and verified comprehensive unit test suites using Jest and React Testing Library.</p>
+            </div>
+          </div>
+          
+          <!-- Timeline Card 3 -->
+          <div class="timeline-item left animate-on-scroll">
+            <div class="timeline-icon"><i data-lucide="graduation-cap"></i></div>
+            <div class="timeline-content glass-panel">
+              <span class="timeline-date">2020 - 2024</span>
+              <h3>B.Tech - Computer Science & Engineering</h3>
+              <h4 class="company-name">Anna University Affiliate</h4>
+              <p>Specialized in Core Data Structures & Algorithms, Database Management, and Operating System principles. Developed a machine learning-based smart energy grid analytics app as a graduation thesis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title"><span class="gradient-text">Featured Projects</span></h2>
+          <p class="section-subtitle">A collection of systems and web applications built from scratch.</p>
+        </div>
+
+        <!-- Filter Navigation -->
+        <div class="project-filters" id="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="devops">DevOps/Cloud</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- Project 1: ThiraCloud -->
+          <div class="project-card glass-panel" data-category="devops" id="project-1">
+            <div class="project-image-container">
+              <img src="assets/project1.png" alt="ThiraCloud Dashboard Overview" class="project-thumbnail">
+              <div class="project-overlay">
+                <button class="btn btn-secondary open-modal-btn" data-project="project1">View Details</button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Cloud & DevOps</span>
+              <h3>ThiraCloud Orchestration</h3>
+              <p>A web dashboard to track Kubernetes cluster wellness and manage containerized pipelines dynamically.</p>
+              <div class="project-skills">
+                <span>Docker</span>
+                <span>Kubernetes</span>
+                <span>Next.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: NexStore -->
+          <div class="project-card glass-panel" data-category="fullstack" id="project-2">
+            <div class="project-image-container">
+              <img src="assets/project2.png" alt="NexStore Shop Interface" class="project-thumbnail">
+              <div class="project-overlay">
+                <button class="btn btn-secondary open-modal-btn" data-project="project2">View Details</button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Full-Stack</span>
+              <h3>NexStore E-commerce</h3>
+              <p>A headless e-commerce store with full payment integrations, dashboard administration, and instant search capabilities.</p>
+              <div class="project-skills">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Stripe</span>
+                <span>Postgres</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: TaskFlow -->
+          <div class="project-card glass-panel" data-category="fullstack" id="project-3">
+            <div class="project-image-container">
+              <img src="assets/project3.png" alt="TaskFlow Interactive Board" class="project-thumbnail">
+              <div class="project-overlay">
+                <button class="btn btn-secondary open-modal-btn" data-project="project3">View Details</button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Full-Stack</span>
+              <h3>TaskFlow Collaboration</h3>
+              <p>Real-time collaboration board featuring dragging tasks, integrated team messaging, and action timelines.</p>
+              <div class="project-skills">
+                <span>WebSockets</span>
+                <span>Express</span>
+                <span>Redis</span>
+                <span>React</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: DevPulse -->
+          <div class="project-card glass-panel" data-category="frontend" id="project-4">
+            <div class="project-image-container">
+              <img src="assets/project4.png" alt="DevPulse Dashboard View" class="project-thumbnail">
+              <div class="project-overlay">
+                <button class="btn btn-secondary open-modal-btn" data-project="project4">View Details</button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Frontend UI</span>
+              <h3>DevPulse Analytics</h3>
+              <p>High fidelity dashboard visualising developers git activities, commits frequency, and CI statuses with D3.js chart modules.</p>
+              <div class="project-skills">
+                <span>React.js</span>
+                <span>D3.js</span>
+                <span>Framer Motion</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title"><span class="gradient-text">Let's Work Together</span></h2>
+          <p class="section-subtitle">Have a project in mind or want to talk about engineering? Drop a line below.</p>
+        </div>
+
+        <div class="contact-grid grid-2">
+          <!-- Contact Information & Status -->
+          <div class="contact-info-panel">
+            <div class="status-card glass-panel">
+              <div class="status-indicator-ring">
+                <span class="status-pulse"></span>
+              </div>
+              <div class="status-details">
+                <h4>Open for new roles & projects</h4>
+                <p>Current Response Time: &lt; 24 Hours</p>
+              </div>
+            </div>
+
+            <div class="contact-methods">
+              <div class="contact-method-card glass-panel">
+                <div class="method-icon"><i data-lucide="mail"></i></div>
+                <div class="method-details">
+                  <span>Email Me</span>
+                  <a href="mailto:dineshpranav.dev@gmail.com">dineshpranav.dev@gmail.com</a>
+                </div>
+              </div>
+              
+              <div class="contact-method-card glass-panel">
+                <div class="method-icon"><i data-lucide="map-pin"></i></div>
+                <div class="method-details">
+                  <span>Location</span>
+                  <p>Chennai, Tamil Nadu, India</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-channels">
+              <h4>Find me on:</h4>
+              <div class="social-icons">
+                <a href="https://github.com/dineshpranavks" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                  <i data-lucide="github"></i>
+                </a>
+                <a href="https://linkedin.com/in/dineshpranavks" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                  <i data-lucide="linkedin"></i>
+                </a>
+                <a href="https://twitter.com/dineshpranavks" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter Profile">
+                  <i data-lucide="twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-panel glass-panel">
+            <form id="portfolio-contact-form" novalidate>
+              <div class="form-group-row grid-2">
+                <div class="form-group">
+                  <label for="contact-name">Your Name</label>
+                  <input type="text" id="contact-name" name="name" required placeholder="John Doe">
+                  <span class="error-msg" id="name-error">Please fill in your name.</span>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email Address</label>
+                  <input type="email" id="contact-email" name="email" required placeholder="john@example.com">
+                  <span class="error-msg" id="email-error">Please supply a valid email address.</span>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" required placeholder="Project Collaboration Opportunity">
+                <span class="error-msg" id="subject-error">Please state the subject of your query.</span>
+              </div>
+              
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="5" required placeholder="Tell me a bit about your project or what you want to discuss..."></textarea>
+                <span class="error-msg" id="message-error">Please enter details of your message.</span>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                <span>Submit Message</span>
+                <i data-lucide="send" class="icon-send"></i>
+                <div class="form-spinner hidden"></div>
+              </button>
+            </form>
+            <div id="form-success-box" class="form-success-card hidden">
+              <div class="success-icon"><i data-lucide="check-circle-2"></i></div>
+              <h3>Message Dispatched!</h3>
+              <p>Thank you for reaching out. I'll review your inquiry and get back to you shortly.</p>
+              <button class="btn btn-secondary btn-sm" id="reset-form-btn">Send Another Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-content text-center">
+      <p class="footer-logo">&lt;Dinesh /&gt;</p>
+      <p class="footer-tagline">Building interfaces that matter, codebases that last.</p>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom-row">
+        <p class="copyright">&copy; 2026 Dinesh Pranav K S. All rights reserved.</p>
+        <button id="back-to-top-btn" class="back-to-top" aria-label="Scroll back to top">
+          <i data-lucide="chevron-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal overlay dialog for Project details -->
+  <div id="project-modal" class="modal-overlay" aria-hidden="true" role="dialog">
+    <div class="modal-card glass-panel animate-modal">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close Project Details">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-body-content">
+        <!-- Rendered dynamically by script.js -->
+        <div class="modal-image-wrapper">
+          <img src="" alt="" id="modal-project-img" class="modal-img">
+        </div>
+        <div class="modal-details-grid">
+          <div class="modal-main-desc">
+            <span class="project-tag" id="modal-project-tag">Category</span>
+            <h2 id="modal-project-title">Project Title</h2>
+            <div id="modal-project-desc" class="project-desc-full">
+              <!-- Full description here -->
+            </div>
+            
+            <h4 class="modal-subheading">Core Highlights & Features</h4>
+            <ul id="modal-project-features" class="modal-bullet-list">
+              <!-- Dynamically populated bullets -->
+            </ul>
+          </div>
+          
+          <div class="modal-sidebar-info">
+            <div class="meta-info-card">
+              <h4 class="meta-heading">Built with</h4>
+              <div class="project-skills" id="modal-project-skills">
+                <!-- skills tags -->
+              </div>
+            </div>
+            
+            <div class="meta-info-card">
+              <h4 class="meta-heading">Timeline</h4>
+              <span id="modal-project-date" class="meta-detail-text">Jan 2024 - Mar 2024</span>
+            </div>
+            
+            <div class="modal-actions-buttons">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-live-link">
+                <span>View Site Demo</span>
+                <i data-lucide="external-link"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="modal-code-link">
+                <span>Browse Code</span>
+                <i data-lucide="github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lucide invocation script (invoked in script.js) -->
+</body>
+</html>

@@ -435,6 +435,7 @@ html.light .icon-moon {
   font-weight: 600;
   border-radius: 14px;
   cursor: pointer;
+  white-space: nowrap;
   transition: var(--transition-smooth);
 }
 
@@ -526,7 +527,7 @@ html.light .icon-moon {
 
 .hero-title {
   font-family: var(--font-heading);
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
   line-height: 1.15;
   margin-bottom: 1.5rem;
@@ -563,9 +564,10 @@ html.light .icon-moon {
 
 .hero-actions {
   display: flex;
-  gap: 1.5rem;
-  margin-bottom: 4rem;
+  gap: 1rem;
+  /* margin-bottom: 4rem; */
 }
+
 
 .hero-stats {
   display: flex;
@@ -585,7 +587,7 @@ html.light .icon-moon {
   font-weight: 800;
   color: var(--text-main);
   line-height: 1;
-  margin-bottom: 0.25rem;
+  /* margin-bottom: 0.25rem; */
 }
 
 .stat-label {
@@ -597,8 +599,9 @@ html.light .icon-moon {
 .hero-visual {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  padding-left: 5rem;
 }
 
 .image-wrapper {
@@ -666,7 +669,7 @@ html.light .icon-moon {
 .glass-overlay-card h4 {
   font-size: 0.85rem;
   font-weight: 700;
-  margin-bottom: 0.1rem;
+  /* margin-bottom: 0.1rem; */
 }
 
 .glass-overlay-card p {
@@ -949,7 +952,7 @@ html.light .icon-moon {
   color: var(--text-muted);
   padding: 0.6rem 1.5rem;
   border-radius: 50px;
-  font-size: 0.95rem;
+  font-size: 0.50rem;
   font-weight: 600;
   cursor: pointer;
   transition: var(--transition-smooth);
@@ -1583,6 +1586,8 @@ html.light .form-group input, html.light .form-group textarea {
   
   .hero-visual {
     order: -1;
+    justify-content: center;
+    padding-right: 0;
   }
   
   .image-wrapper {
@@ -1689,4 +1694,128 @@ html.light .form-group input, html.light .form-group textarea {
   .modal-actions-buttons .btn {
     width: 100%;
   }
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+}
+
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.45rem 0.9rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: inherit;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-pill i {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+/* Sizes Lucide fallback icons for concepts like DSA and REST APIs */
+.skill-pill svg.lucide-pill-icon {
+  width: 1rem;
+  height: 1rem;
+  opacity: 0.85;
+}
+
+.skill-pill:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+/* ==========================================================================
+   HERO SOCIAL PILLS (GitHub / LinkedIn / LeetCode)
+   ========================================================================== */
+.hero-social-pills {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.social-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 1.1rem;
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s ease,
+              background 0.3s ease,
+              border-color 0.3s ease;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-pill i {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+/* GitHub — dark sleek */
+.github-pill {
+  background: rgba(36, 36, 36, 0.75);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #e6edf3;
+  box-shadow: 0 4px 14px -4px rgba(0, 0, 0, 0.5);
+}
+
+.github-pill:hover {
+  transform: translateY(-3px) scale(1.04);
+  background: rgba(60, 60, 60, 0.9);
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 22px -6px rgba(0, 0, 0, 0.7),
+              0 0 12px 2px rgba(255, 255, 255, 0.07);
+  color: #ffffff;
+}
+
+/* LinkedIn — brand blue glow */
+.linkedin-pill {
+  background: rgba(10, 102, 194, 0.15);
+  border-color: rgba(10, 102, 194, 0.4);
+  color: #58b4ff;
+  box-shadow: 0 4px 14px -4px rgba(10, 102, 194, 0.3);
+}
+
+.linkedin-pill:hover {
+  transform: translateY(-3px) scale(1.04);
+  background: rgba(10, 102, 194, 0.28);
+  border-color: rgba(10, 102, 194, 0.75);
+  box-shadow: 0 8px 22px -6px rgba(10, 102, 194, 0.55),
+              0 0 14px 2px rgba(10, 102, 194, 0.2);
+  color: #90cfff;
+}
+
+/* LeetCode — orange accent glow */
+.leetcode-pill {
+  background: rgba(249, 115, 22, 0.1);
+  border-color: rgba(249, 115, 22, 0.35);
+  color: #fb923c;
+  box-shadow: 0 4px 14px -4px rgba(249, 115, 22, 0.25);
+}
+
+.leetcode-pill:hover {
+  transform: translateY(-3px) scale(1.04);
+  background: rgba(249, 115, 22, 0.22);
+  border-color: rgba(249, 115, 22, 0.7);
+  box-shadow: 0 8px 22px -6px rgba(249, 115, 22, 0.5),
+              0 0 14px 2px rgba(249, 115, 22, 0.18);
+  color: #fdba74;
 }

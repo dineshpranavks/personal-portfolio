@@ -12,72 +12,72 @@ document.addEventListener('DOMContentLoaded', () => {
   // Define Projects Database for Modal Display
   const PROJECTS_DATABASE = {
     project1: {
-      title: "ThiraCloud Orchestration Platform",
-      category: "Cloud & DevOps",
-      tag: "DevOps/Cloud",
+      title: "LittleLink",
+      category: "Frontend",
+      tag: "Frontend",
       img: "assets/project1.png",
-      date: "Jan 2024 - Mar 2024",
-      desc: "ThiraCloud is a web-based dashboard engineered to provide visual metrics and pipeline control for containerized deployments. By orchestrating communication with Kubernetes clusters, it bridges the gap between infrastructure administrators and web developers who want instantaneous build logs, node resources overview, and container scaling control.",
+      date: "2024",
+      desc: "LittleLink is a lightweight, self-hosted link-in-bio page builder — a clean and minimal alternative to Linktree. It lets you aggregate all your social media profiles, websites, and links into one beautiful, shareable page that you fully own and control.",
       features: [
-        "Interactive metrics charts showing CPU and Memory utility per Kubernetes Pod.",
-        "Secure OAuth2 integrations for multi-tenant developer permissions.",
-        "One-click pod scaling and restart mechanism connected via backend WebSockets.",
-        "Automated deployment notifications using Discord webhook integrations."
+        "Single-page link aggregator with clean, minimal design aesthetic.",
+        "Fully self-hosted — no third-party dependency or vendor lock-in.",
+        "Easily customizable with simple HTML/CSS — no framework overhead.",
+        "Responsive layout that works seamlessly across all screen sizes."
       ],
-      skills: ["Docker", "Kubernetes", "Next.js", "Chart.js", "Express", "JWT"],
-      liveLink: "https://github.com/dineshpranavks/thira-cloud-demo", // Mock links
-      codeLink: "https://github.com/dineshpranavks/thira-cloud-demo"
+      skills: ["HTML5", "CSS3", "JavaScript"],
+      liveLink: "https://github.com/dineshpranavks/LittleLink",
+      codeLink: "https://github.com/dineshpranavks/LittleLink"
     },
     project2: {
-      title: "NexStore Headless E-commerce",
+      title: "Movie Ticket Booking System",
       category: "Full-Stack",
       tag: "Fullstack",
       img: "assets/project2.png",
-      date: "Oct 2023 - Dec 2023",
-      desc: "NexStore is a highly optimized e-commerce software solution designed to guarantee less than 1.5 seconds page load times. Built with a headless architecture, it features clean product searching, dynamic filtering, multi-tier checkout procedures, and administrative interfaces for product updates and stock audits.",
+      date: "2024",
+      desc: "A full-featured movie ticket booking system built in Java with a rich GUI. The app allows users to browse movies, select showtimes, pick seats on an interactive seat map, and complete bookings — all backed by a MySQL database for persistent storage and booking management.",
       features: [
-        "Server-side rendered product listings using Next.js App Router for optimal SEO.",
-        "Stripe checkout integration with secure webhooks validation.",
-        "Full dashboard admin panel supporting inventory counting and charts.",
-        "Optimized image delivery using modern Next/Image caching hooks."
+        "Interactive seat selection map with real-time availability updates.",
+        "Movie browsing with show scheduling and time slot management.",
+        "Complete booking workflow with confirmation and ticket generation.",
+        "MySQL-backed persistent storage for movies, shows, and bookings."
       ],
-      skills: ["React", "Next.js", "Stripe API", "PostgreSQL", "Prisma ORM", "TailwindCSS"],
-      liveLink: "https://github.com/dineshpranavks/nexstore-ecommerce",
-      codeLink: "https://github.com/dineshpranavks/nexstore-ecommerce"
+      skills: ["Java", "Java Swing", "MySQL", "JDBC"],
+      liveLink: "https://github.com/dineshpranavks/Movie_Ticket_booking_System",
+      codeLink: "https://github.com/dineshpranavks/Movie_Ticket_booking_System"
     },
     project3: {
-      title: "TaskFlow Real-Time Workspace",
+      title: "ProMe — Portfolio Generator",
       category: "Full-Stack",
       tag: "Fullstack",
       img: "assets/project3.png",
-      date: "Jul 2023 - Sep 2023",
-      desc: "TaskFlow is a multi-user collaborative workspace application similar to Trello. It provides instant state synchronization across clients using low-latency WebSockets. Team members can move task cards, converse in chat panels, and receive instant activity feeds on project status updates.",
+      date: "2024",
+      desc: "ProMe is a dynamic developer portfolio generator that empowers users to build and deploy a professional portfolio site without writing code. Users can customize themes, add project showcases, skills, and social links — all stored and served through a full-stack architecture.",
       features: [
-        "Dynamic drag-and-drop workspace UI powered by React Beautiful DnD.",
-        "Real-time event sync with WebSockets and Redis pub/sub messaging channels.",
-        "Instant text messaging panel attached per board workspace.",
-        "User presence trackers showing active online/offline members."
+        "No-code portfolio builder with live preview and multiple themes.",
+        "Dynamic sections for projects, skills, experience, and contact info.",
+        "Full-stack architecture with React frontend and Node.js/MongoDB backend.",
+        "Shareable public portfolio URL for each user profile."
       ],
-      skills: ["React.js", "WebSockets", "Node.js", "Redis", "MongoDB", "CSS Grid"],
-      liveLink: "https://github.com/dineshpranavks/taskflow-collab",
-      codeLink: "https://github.com/dineshpranavks/taskflow-collab"
+      skills: ["React", "Node.js", "MongoDB", "Express", "CSS3"],
+      liveLink: "https://github.com/dineshpranavks/ProMe",
+      codeLink: "https://github.com/dineshpranavks/ProMe"
     },
     project4: {
-      title: "DevPulse Developer Dashboard",
-      category: "Frontend UI",
-      tag: "Frontend",
+      title: "Project Management App",
+      category: "Full-Stack",
+      tag: "Fullstack",
       img: "assets/project4.png",
-      date: "Apr 2023 - Jun 2023",
-      desc: "DevPulse aggregates Git commit history, pull request status, and active deployment cycles into a clean centralized monitoring console. It features responsive, high-performance vector visualizations built using D3.js and responsive CSS styling, supporting high density metrics rendering for desktop layouts.",
+      date: "2024",
+      desc: "A collaborative project management web application built with Spring Boot and React. It features Kanban-style task boards, team member assignments, deadline tracking, and progress dashboards — designed to help development teams plan and execute projects efficiently.",
       features: [
-        "Interactive heatmaps of team commit frequencies using SVG D3 components.",
-        "API hooks communicating directly with Github REST services.",
-        "Fluid entrance layouts and animations with Framer Motion equivalents.",
-        "Comprehensive accessibility testing maintaining contrast levels."
+        "Kanban-style task boards with drag-and-drop task management.",
+        "Team member assignment and role-based access control.",
+        "Deadline tracking with status indicators and progress dashboards.",
+        "RESTful Spring Boot backend with MySQL for robust data persistence."
       ],
-      skills: ["React.js", "D3.js", "GitHub API", "CSS variables", "Framer Motion"],
-      liveLink: "https://github.com/dineshpranavks/devpulse-dashboard",
-      codeLink: "https://github.com/dineshpranavks/devpulse-dashboard"
+      skills: ["Spring Boot", "React", "MySQL", "REST API", "Java"],
+      liveLink: "https://github.com/dineshpranavks/project_management",
+      codeLink: "https://github.com/dineshpranavks/project_management"
     }
   };
 
